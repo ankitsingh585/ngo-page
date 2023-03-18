@@ -1,0 +1,101 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+    }
+    
+    #wrapper {
+        overflow: hidden;
+        background-color: rgb(177, 206, 206);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container {
+        height: 620px;
+        width: 1200px;
+        background-color: rgb(236, 232, 239);
+        box-shadow: 0px 6px 10px 0px rgb(22, 22, 22);
+        border-radius: 10px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .head {
+        position: absolute;
+        margin-left: 4rem;
+        margin-top: 6rem;
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.5s;
+        user-select: none;
+    }
+    
+    h1:hover {
+        color: rgb(3, 125, 138);
+    }
+    
+    .para {
+        position: absolute;
+        height: 410px;
+        width: 700px;
+        margin-top: 12rem;
+        margin-left: 8rem;
+        font-size: 25px;
+    }
+    
+    .p2 {
+        font-size: 20px;
+        margin-left: 3rem;
+        margin-top: 0.5rem;
+    }
+    
+    .p3 {
+        font-size: 20px;
+        margin-left: 3rem;
+        margin-top: 0.5rem;
+    }
+    
+    .img {
+        height: 420px;
+        width: 270px;
+        margin-left: 55rem;
+        margin-top: 6rem;
+        animation-name: ngo;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes ngo {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+        100% {
+            tranform: translateX(0px);
+        }
+    }
+    /* .container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(45deg, #cdcfd5, #b4b7c6be, #d8d9e17c);
+        transform: scaleX(0);
+        transition: all 0.8s;
+        z-index: 1;
+    }
+    
+    .container:hover::before {
+        transform: scaleX(1);
+        position: absolute;
+    } */
